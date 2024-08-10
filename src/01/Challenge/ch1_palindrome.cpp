@@ -15,7 +15,7 @@
 bool is_palindrome(std::string str){
     std::transform(str.begin(), str.end(), str.begin(), tolower);
     std::string rev = str;
-    std::reverse(rev.end(), rev.begin());
+    std::reverse(rev.begin(), rev.end());
     return str == rev;
 }
 
